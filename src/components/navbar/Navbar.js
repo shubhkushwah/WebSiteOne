@@ -1,37 +1,3 @@
-// import React, { useState } from 'react'
-// import './NavStyle.css'
-// import { Link } from 'react-router-dom';
-
-// const Navbar = () => {
-//   const [click, setClick] = useState(false);
-
-//   return (
-//     <>
-//       <header>
-//         <nav className='flexSB'>
-//           <ul className={click ? 'mobile-nav' : 'flexSB'} onClick={() => setClick(false)} >
-//             <li><Link to='/'>Home</Link></li>
-//             <li><Link to='/about'>About</Link></li>
-//             <li><Link to='/topper'>Team</Link></li>
-//             <li><Link to='/pricing'>Pricing</Link></li>
-//             <li><Link to='/contact'>Contact</Link></li>
-//           </ul>
-//           < className='start'>
-//             < className='button'>GET CERTIFICATE</>
-//           </>
-
-//           <button className='toggle' onClick={() => setClick(!click)} >
-//             {click ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}
-//           </button>
-//         </nav>
-//       </header>
-//     </>
-//   )
-// }
-
-// export default Navbar
-
-
 import React, { useState } from 'react'
 import './NavStyle.css'
 import { Link } from 'react-router-dom'
@@ -41,7 +7,7 @@ const Navbar = () => {
   // When scroll header at top
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header")
-    header.classList.toggle("active", window.screenY > 100)
+    header.classList.toggle("active", window.scrollY > 60)
   })
 
   // Toggle menu
