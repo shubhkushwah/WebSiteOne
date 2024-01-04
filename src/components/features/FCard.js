@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = (props) => {
+const FCard = (props) => {
     return (
         <>
             <div className="box btn-shadow">
@@ -15,4 +15,4 @@ const Card = (props) => {
     )
 }
 
-export default Card
+export default FCard

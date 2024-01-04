@@ -3,11 +3,14 @@
 }
 
 .portfolio .box {
+    box-shadow: 10px 10px 15px #cbcbcb, 10px -10px 15px #ffffff;
     border-radius: 10px;
     position: relative;
+    padding: 20px;
 }
 
 .portfolio .box:hover {
+    cursor: pointer;
     background: none;
     transform: translate(-0);
 }
@@ -25,7 +28,7 @@
 }
 
 .portfolio .box .img:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .portfolio .category {
@@ -50,7 +53,7 @@
     transition: 0.5s;
 }
 
-.portfolio .title:hover .arrow {
+.portfolio .title:hover .arrow{
     opacity: 1;
 }
 
@@ -72,7 +75,7 @@
     margin-right: 10px;
 }
 
-/* _________ Popup _________ */
+/* _______ popup _______ */
 
 body.active-modal {
     overflow-y: hidden;
@@ -111,9 +114,10 @@ body.active-modal {
     max-width: 85%;
     min-width: 60%;
     z-index: 9999;
-    box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
     padding: 50px;
     border-radius: 10px;
+    background: #e2e8ec;
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px white;
 }
 
 .modal-text {
@@ -150,6 +154,13 @@ body.active-modal {
     border-radius: 50%;
     padding: 0 0;
     font-size: 20px;
+}
+
+.modal-text button.close-modal:hover {
+    background-color: #ff014f;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
 }
 
 .modal-text button.close-modal i {

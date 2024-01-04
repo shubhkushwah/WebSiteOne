@@ -1,6 +1,6 @@
 import React from 'react'
 import './FeatureStyle.css'
-import Card from './Card'
+import FCard from './FCard'
 import data from './FeatureApi'
 
 const Features = () => {
@@ -15,7 +15,7 @@ const Features = () => {
 
                     <div className="content grid">
                         {data.map((val, index) => {
-                            return<Card key={index} image={val.image} title={val.title} desc={val.desc} />
+                            return<FCard key={index} image={val.image} title={val.title} desc={val.desc} />
                         })}
                     </div>
                 </div>

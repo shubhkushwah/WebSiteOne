@@ -34,8 +34,6 @@ const Card = (props) => {
                 </div>
             </div>
 
-            {/* ______ Popup ______ */}
-
             {modal && (
                 <div className="modal">
 
@@ -53,10 +51,10 @@ const Card = (props) => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam possimus voluptas nemo? Exercitationem voluptates ipsam laborum repellat cupiditate natus eius!</p>
 
                             <div className="button f_flex mtop">
-                                <button className='btn_shadow'>
+                                <button className='btn-shadow'>
                                     LIKE THIS <i className='far fa-thumbs-up'></i>
                                 </button>
-                                <button className='btn_shadow'>
+                                <button className='btn-shadow'>
                                     VIEW PROJECT <i className='fas fa-chevron-right'></i>
                                 </button>
                             </div>
@@ -68,7 +66,6 @@ const Card = (props) => {
                     </div>
                 </div>
             )}
-
         </>
     )
 }

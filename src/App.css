@@ -68,7 +68,7 @@ button {
 .btn-shadow:hover {
   background: #ff014f;
   color: white;
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .box_shodow {
@@ -137,13 +137,12 @@ input {
   margin-bottom: 20px;
 }
 /*----------Footer---------*/
-footer {
+/* footer {
   margin: 20% 0 10% 0;
 }
 footer p {
   margin-top: 30px;
 }
-/*----------Footer---------*/
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -152,4 +151,22 @@ footer p {
   .right {
     width: 100%;
   }
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  
+  background: #e2e8ec;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  
+  border-radius: 20px;
+  background: #ff014f;
 }

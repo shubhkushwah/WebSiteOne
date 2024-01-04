@@ -1,6 +1,6 @@
 import React from 'react'
 import './PortfolioStyle.css'
-import Card from '../features/Card'
+import Card from '../portfolio/Card'
 import Portfolio_data from './Portfolio_data'
 
 const Portfolio = () => {
