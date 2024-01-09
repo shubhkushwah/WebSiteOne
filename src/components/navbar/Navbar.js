@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './NavStyle.css'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
 
@@ -9,6 +10,9 @@ const Navbar = () => {
     const header = document.querySelector(".header")
     header.classList.toggle("active", window.scrollY > 60)
   })
+
+  // Scroll handler
+ 
 
   // Toggle menu
   const [Mobile, setMobile] = useState(false)
@@ -25,10 +29,10 @@ const Navbar = () => {
           <div className="navlink">
             <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"} onClick={() => setMobile(false)}>
               <li><Link to='/'>Home</Link></li>
-              <li><Link to='/about'>About</Link></li>
-              <li><Link to='/topper'>Team</Link></li>
-              <li><Link to='/pricing'>Pricing</Link></li>
+              <li><Link to='/features'>Features</Link></li>
+              <li><Link to='/portfolio'>Portfolio</Link></li>
               <li><Link to='/contact'>Contact</Link></li>
+              <li><Link to='/testimonial'>Testimonial</Link></li>
               <li><button className='home-btn'>Resister</button></li>
             </ul>
             <button className='toggle' onClick={() => setMobile(!Mobile)} >
